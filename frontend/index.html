@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Gestión de Empleados</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>
+
+            <h1>
+                <i class="ri-team-fill"></i>
+                Sistema de Gestión de Empleados
+            </h1>
+
+            <p>
+                Administración Full Stack con Django y API REST
+            </p>
+
+        </header>
+
+        <section class="formulario-contenedor">
+
+            <h2>
+                Registrar Empleado
+            </h2>
+
+            <form id="formulario">
+
+                <div class="grupo-input">
+
+                    <label>Nombre</label>
+
+                    <input type="text" id="nombre" required>
+
+                </div>
+
+                <div class="grupo-input">
+
+                    <label>Cargo</label>
+
+                    <input type="text" id="cargo" required>
+
+                </div>
+
+                <div class="grupo-input">
+
+                    <label>Salario</label>
+
+                    <input type="number" id="salario" required>
+
+                </div>
+
+                <button type="submit">
+
+                    <i class="ri-save-3-fill"></i>
+
+                    Guardar Empleado
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="tabla-contenedor">
+
+            <div class="encabezado-tabla">
+
+                <h2>
+                    Lista de Empleados
+                </h2>
+
+                <p id="contador"></p>
+
+            </div>
+
+            <input type="text"
+            id="buscador"
+            placeholder="Buscar empleado...">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Cargo</th>
+                        <th>Salario</th>
+                        <th>Acciones</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="lista-empleados">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
