@@ -67,4 +67,4 @@ Desarrollo de eliminación de registros.
 
 # Autor
 
-Marshall Parra
+Marshall Nicolas Guio Ospina
